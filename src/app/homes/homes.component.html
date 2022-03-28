@@ -1,16 +1,15 @@
-<h1>Company Employee Details</h1>
 
+<h1>Table using JSON Server API</h1>
+<form>
+  <input type="search" >
+  <label for="html">Search here</label><br>
 
-  <nav class="navbar ">
-    <input class="form-control" type="search" name="firstName" [(ngModel)]="firstName" (ngModelChange)="search()" placeholder="enter name ">
-  </nav>
-
-
+</form>
 <hr>
 
 
 <table id="users">
-  <label type="search"  ></label>
+  <label type="search" ></label>
 
   <thead>
     <tr>
@@ -20,7 +19,7 @@
 
     </thead>
 
-  <tbody>  <tr *ngFor="let user of users" >
+  <tbody>  <tr *ngFor="let user of users">
       <td>{{user.id}}</td>
         <td>{{user.firstName}}</td>
           <td>{{user.lastName}}</td>
@@ -31,4 +30,5 @@
   </tr></tbody>
 
 </table>
+
 

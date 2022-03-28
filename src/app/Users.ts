@@ -6,6 +6,7 @@ export class Users
     email : string;
     mobile : string;
     salary : string;
+  
 
     constructor(id: any, firstName: any, lastName: any, email: any, mobile: any, salary: any)
     {
